@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+
+  get 'welcome/index'
+
+  get 'welcome/about', as: :about
+
+  get 'welcome/contact', as: :contact
+
   resources :blog_names
 
   resources :blog_comments

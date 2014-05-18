@@ -1,0 +1,24 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+
+a {
+  color: #fff; text-decoration: none;
+  &:visited {
+    color: #fff;
+  }
+  &:hover {
+    color: #00fff;
+    background-color: #000;
+  }
+}

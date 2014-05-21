@@ -7,6 +7,15 @@ Rails.application.routes.draw do
 
   get 'welcome/contact', as: :contact
 
+  get 'welcome/ajax'
+
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+resources "contacts", only: [:new, :create]
+
+
+
+  resources :contacts
+
   resources :blog_names
 
   resources :blog_comments

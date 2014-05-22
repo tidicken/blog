@@ -1,0 +1,10 @@
+there are <%=@results.count%> bus routes currently.
+<br><br>
+
+<%@results.each do |result| %>
+	Latitude: <%=result['LATITUDE']%><br>
+	Timepoint: <%=result ['TIMEPOINT']%><BR>
+	Direction: <%=result['DIRECTION']%><BR>
+	Vehicle: <%=result ['VEHICLE']%><br><br>
+
+<% end %>
